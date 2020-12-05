@@ -3,7 +3,7 @@
 # Pi400VGA
 VGA interface for Raspberry Pi 400
 
-buy on [ebay](https://www.ebay.fr/itm/) :package:
+buy on [ebay](https://www.ebay.fr/itm/154228172745) :package:
 
 ![](img/Pi400VGA.jpg)
 
