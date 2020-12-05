@@ -1,3 +1,5 @@
+[:fr:](LISEZMOI.md) [:uk:](README.md)
+
 # Pi400VGA
 VGA interface for Raspberry Pi 400
 
@@ -145,7 +147,7 @@ audio interface is connected to gpio 18 & 19 (PWM)
 ![pcb](img/3D.PNG)
 
 ## Installation
-copy content of [config-example.txt](overlays/config-example.txt?raw=true) to /boot/config.txt
+copy content of [config-example.txt](img/config-example.txt?raw=true) to /boot/config.txt
 
 
 ## Révision
