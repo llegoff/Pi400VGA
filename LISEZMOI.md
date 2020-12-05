@@ -14,7 +14,7 @@ Ce montage utilise le mode 3 dpi,
 
 voir https://www.raspberrypi.org/documentation/hardware/raspberrypi/dpi/README.md
 
-seules les bits nécessaires du dpi sont redirigées sur le port GPIO 40 broches, avec la ligne 'gpio=2-8,12-17,20-24=a2' dufichier config.txt 
+seuls les bits nécessaires du dpi sont redirigées sur le port GPIO 40 broches, avec la ligne 'gpio=2-8,12-17,20-24=a2' dufichier config.txt 
 
 /boot/config.txt
 
