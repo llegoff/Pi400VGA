@@ -63,7 +63,7 @@ only the necessary bits of the dpi are redirected to the 40-pin GPIO port, with 
     #hdmi_timings=320 1 25 30 30 240 1 9 3 10 0 0 0 60 0 6400000 1
     #hdmi_timings=1920 1 52 208 260 240 1 6 10 6 0 0 0 60 0 38400000 1
     
-for recalbox see https://recalbox.gitbook.io/tutorials/v/francais/video/crt/configurez-votre-ecran-cathodique-sur-le-bus-dpi-vga666-piscart-rgbpi
+for Recalbox see https://recalbox.gitbook.io/tutorials/v/francais/video/crt/configurez-votre-ecran-cathodique-sur-le-bus-dpi-vga666-piscart-rgbpi
 
 ### Dual Screen (VGA + HDMI)
 
