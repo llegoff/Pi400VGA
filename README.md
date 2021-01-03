@@ -67,76 +67,12 @@ for Recalbox see https://recalbox.gitbook.io/tutorials/v/francais/video/crt/conf
 
 ### Dual Screen (VGA + HDMI)
 
-:warning: need raspbian buster
+on the pi4 and pi400, the dual screen function is supported by the vc4 fkms v3d driver
 
-edit file /boot/config.txt  
-
-at the end of the file, add line:
-
-    [all]
-    #dtoverlay=vc4-fkms-v3d
+    [pi4]
+    # Enable DRM VC4 V3D driver on top of the dispmanx display stack
+    dtoverlay=vc4-fkms-v3d
     max_framebuffers=2
-
-
-edit file /usr/share/X11/xorg.conf.d/99-fbturbo.conf
-
-     This is a minimal sample config file, which can be copied to
-    # /etc/X11/xorg.conf in order to make the Xorg server pick up
-    # and load xf86-video-fbturbo driver installed in the system.    
-    #
-    # When troubleshooting, check /var/log/Xorg.0.log for the debugging
-    # output and error messages.
-    #
-    # Run "man fbturbo" to get additional information about the extra
-    # configuration options for tuning the driver.
-    
-    #Section "Device"
-    #        Identifier      "Allwinner A10/A13 FBDEV"
-    #        Driver          "fbturbo"
-    #        Option          "fbdev" "/dev/fb0"
-    #        Option          "SwapbuffersWait" "true"
-    #EndSection
-    
-    Section "Device"
-    Identifier "Raspberry Pi HDMI"
-    Driver "fbturbo"
-    Option "fbdev" "/dev/fb0"
-    Option "ShadowFB" "off"
-    EndSection
-    
-    Section "Device"
-    Identifier "Raspberry Pi DPI"
-    Driver "fbturbo"
-    Option "fbdev" "/dev/fb1"
-    Option "ShadowFB" "off"
-    EndSection
-    
-    Section "Monitor"
-    Identifier "HDMI"
-    EndSection
-
-    Section "Monitor"
-    Identifier "DPI"
-    EndSection
-    
-    Section "Screen"
-    Identifier "screen0"
-    Device "Raspberry Pi HDMI"
-    Monitor "HDMI"
-    EndSection
-    
-    Section "Screen"
-    Identifier "screen1"
-    Device "Raspberry Pi DPI"
-    Monitor "DPI"
-    EndSection
-    
-    Section "ServerLayout"
-    Identifier "default"
-    Screen 0 "screen0" 0 0
-    Screen 1 "screen1" RightOf "screen0"
-    Option "Xinerama" "on"
-    EndSection
 
 ### Remote Desktop MultiMonitor
 install freeRDP
