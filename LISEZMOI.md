@@ -10,7 +10,7 @@ achetez sur [ebay](https://www.ebay.fr/itm/154303921644) :package:
 ![](img/Pi400VGA.jpg)
 
 ### DPI (Display parallel Interface)
-Ce montage utilise le mode 3 dpi, 
+Comme pour l'interface [VGA666](https://github.com/fenlogic/vga666), ce montage utilise le l'interface DPI du respberry pi (mode 3), 
 
 ![](img/dpi-packing.png)
 
