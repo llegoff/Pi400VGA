@@ -100,6 +100,10 @@ seuls les bits nécessaires du dpi sont redirigées sur le port GPIO 40 broches,
     #hdmi_timings=320 1 12 32 44 240 1 6 10 6 0 0 0 60 0 6400000 1  
     #hdmi_timings=506 1 8 44 52 240 1 6 10 6 0 0 0 60 0 9600000 1
     #hdmi_timings=512 1 16 48 64 288 1 3 5 6 0 0 0 50 0 9600000 1
+        
+    #audio
+    dtoverlay=audremap,pins_18_19
+    dtparam=audio=on
     
 voir https://wiki.recalbox.com/fr/tutorials/video/crt/crt-screen-dpi-vga666-piscart-rgbpi
 
