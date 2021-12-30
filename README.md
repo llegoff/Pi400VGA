@@ -100,6 +100,10 @@ only the necessary bits of the dpi are redirected to the 40-pin GPIO port, with 
     #hdmi_timings=506 1 8 44 52 240 1 6 10 6 0 0 0 60 0 9600000 1
     #hdmi_timings=512 1 16 48 64 288 1 3 5 6 0 0 0 50 0 9600000 1
     
+    #audio
+    dtoverlay=audremap,pins_18_19
+    dtparam=audio=on
+    
 see https://wiki.recalbox.com/en/tutorials/video/crt/crt-screen-dpi-vga666-piscart-rgbpi
 
 ### Dual Screen (VGA + HDMI)
