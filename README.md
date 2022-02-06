@@ -5,7 +5,7 @@ VGA interface for Raspberry Pi 400
 
 for pi zero see https://github.com/llegoff/VGA_Zero
 
-buy on [ebay](https://www.ebay.fr/itm/154770388969) :package:  
+buy on [ebay](https://www.ebay.fr/itm/154831724369) :package:  
 
 ![](img/Pi400VGA.jpg)
 
