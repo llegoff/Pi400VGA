@@ -22,6 +22,9 @@ seuls les bits nécessaires du dpi sont redirigées sur le port GPIO 40 broches,
 
     # disable i2c, pin use by h-sync & v-sync
     dtparam=i2c_arm=off
+    # remplacer dtoverlay=vc4-kms-v3d par
+    dtoverlay=vc4-fkms-v3d
+    #configuration DPI
     gpio=2-8,12-17,20-24=a2
     dpi_output_format=0x13
     enable_dpi_lcd=1
