@@ -22,14 +22,15 @@ only the necessary bits of the dpi are redirected to the 40-pin GPIO port, with 
     
     # disable i2c, pin use by h-sync & v-sync
     dtparam=i2c_arm=off
+    # replace dtoverlay=vc4-kms-v3d with
+    dtoverlay=vc4-fkms-v3d
+    #DPI config
     gpio=2-8,12-17,20-24=a2
     dpi_output_format=0x13
     enable_dpi_lcd=1
     display_default_lcd=1
     dpi_group=2
     dpi_mode=16
-    # replace dtoverlay=vc4-kms-v3d with
-    dtoverlay=vc4-fkms-v3d
     #---------------- dpi_mode line ---------------------
     #---> 640x480 60hz    dpi_mode=4
     #---> 800x600 60hz    dpi_mode=9
