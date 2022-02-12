@@ -5,6 +5,9 @@ dtparam=audio=on
 # disable i2c, pin use by h-sync & v-sync
 dtparam=i2c_arm=off
 
+# replace dtoverlay=vc4-kms-v3d with
+dtoverlay=vc4-fkms-v3d
+
 #information https://www.raspberrypi.org/documentation/hardware/raspberrypi/dpi/README.md 
 gpio=2-8,12-17,20-24=a2
 dpi_output_format=0x13
