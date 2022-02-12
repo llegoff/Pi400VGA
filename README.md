@@ -28,6 +28,8 @@ only the necessary bits of the dpi are redirected to the 40-pin GPIO port, with 
     display_default_lcd=1
     dpi_group=2
     dpi_mode=16
+    # replace dtoverlay=vc4-kms-v3d with
+    dtoverlay=vc4-fkms-v3d
     #---------------- dpi_mode line ---------------------
     #---> 640x480 60hz    dpi_mode=4
     #---> 800x600 60hz    dpi_mode=9
