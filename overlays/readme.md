@@ -13,7 +13,7 @@ rpi-dpidac.ko -> driver folder
    /overlay/lower/lib/modules/5.10.79-v7l/extra/rpi-dpidac.ko
 
 
-###patch recalbox 8
+### patch recalbox 8
 
 copy rpi-dpidac.ko and vc4-vga666.dtbo in fat32 partition in overlays folder
 
