@@ -206,7 +206,7 @@ static int dpidac_attach(struct drm_bridge *bridge, enum drm_bridge_attach_flags
 
     of_property_read_u32(vga->bridge.of_node, "vc4-vga666-mode", &mode);
     printk(KERN_INFO "[RPI-DPIDAC]: vc4-vga666 mode: %i\n", mode);
-    if(mode != 5) {
+    if(mode == 6) {
         bus_format = MEDIA_BUS_FMT_RGB666_1X24_CPADHI;
     }
 
