@@ -72,7 +72,7 @@ only the necessary bits of the dpi are redirected to the 40-pin GPIO port, with 
 
 copy content of [config-example.txt](img/config-example.txt?raw=true) to /boot/recalbox-user-config.txt
     
-For crt mode , Recalbox 8 use dirver rpi-dpidac, not compatible with dpi mode 3
+For crt mode , Recalbox 8 use driver rpi-dpidac, not compatible with dpi mode 3
 
 see https://wiki.recalbox.com/en/tutorials/video/crt/crt-screen-dpi-vga666-piscart-rgbpi
 
