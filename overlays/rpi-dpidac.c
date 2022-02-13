@@ -209,6 +209,9 @@ static int dpidac_attach(struct drm_bridge *bridge, enum drm_bridge_attach_flags
     if(mode == 6) {
         bus_format = MEDIA_BUS_FMT_RGB666_1X24_CPADHI;
     }
+    if(mode == 3) {
+        bus_format = MEDIA_BUS_FMT_RGB565_1X24_CPADHI;
+    }
 
     ret = drm_display_info_set_bus_formats(&vga->connector.display_info,
                                            &bus_format, 1);
