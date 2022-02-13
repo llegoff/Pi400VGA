@@ -18,15 +18,15 @@ rpi-dpidac.ko -> driver folder
 
 ### patch recalbox 8
 
-copy rpi-dpidac.ko and vc4-vga666.dtbo in fat32 partition in overlays folder
+copy recalboxrgbdual.ko and recalboxrgbdual-thirdparty.dtbo in fat32 partition in overlays folder
 
 ssh recalbox
 
     cd /
     mount -o remount,rw /
-    cd /lib/modules/5.10.83-v71/extra/
+    cd /lib/modules/5.10.83-v7l/extra/
     rm rpi-dpidac.ko
-    cp /boot/overlays/rpi-dpidac.ko rpi-dpidac.ko
+    cp /boot/overlays/recalboxrgbdual.ko recalboxrgbdual.ko
     chmod 644 rpi-dpidac.ko
     
 reboot
