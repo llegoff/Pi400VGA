@@ -70,6 +70,23 @@ only the necessary bits of the dpi are redirected to the 40-pin GPIO port, with 
 
 ### Recalbox
 
+edit /boot/config.txt
+
+find section 
+
+    [pi4]
+    temp_soft_limit=70
+    dtoverlay=vc4-kms-v3d
+    include crt/recalbox-crt-config.txt
+    
+remplace with
+
+    [pi4]
+    temp_soft_limit=70
+    dtoverlay=vc4-fkms-v3d
+    include crt/recalbox-crt-config.txt
+
+
 copy content of [config-example.txt](img/config-example.txt?raw=true) to /boot/recalbox-user-config.txt
     
 For crt mode , Recalbox 8 use driver rpi-dpidac, not compatible with dpi mode 3
