@@ -71,6 +71,9 @@ seuls les bits nécessaires du dpi sont redirigées sur le port GPIO 40 broches,
     
 ### Recalbox
 
+copier le contenu de [config-example.txt](img/config-example.txt?raw=true) a la fin du fichier /boot/recalbox-user-config.txt
+    
+pour le mode crt , Recalbox 8 utilise le driver rpi-dpidac, qui n'est pas compatible avec le mode 3 dpi
     
 voir https://wiki.recalbox.com/fr/tutorials/video/crt/crt-screen-dpi-vga666-piscart-rgbpi
 
