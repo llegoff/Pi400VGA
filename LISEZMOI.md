@@ -77,14 +77,12 @@ chercher la section
     [pi4]
     temp_soft_limit=70
     dtoverlay=vc4-kms-v3d
-    include crt/recalbox-crt-config.txt
     
 remplacer par
 
     [pi4]
     temp_soft_limit=70
     dtoverlay=vc4-fkms-v3d
-    include crt/recalbox-crt-config.txt
 
 copier le contenu de [config-example.txt](img/config-example.txt?raw=true) a la fin du fichier /boot/recalbox-user-config.txt
     
