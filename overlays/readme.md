@@ -21,11 +21,10 @@ ssh recalbox
 
     cd /
     mount -o remount,rw /
-    cd /lib/modules/5.10.79-v71/extra/
+    cd /lib/modules/5.10.83-v71/extra/
     rm rpi-dpidac.ko
     cp /boot/overlays/rpi-dpidac.ko rpi-dpidac.ko
     chmod 644 rpi-dpidac.ko
-    rm /boot/overlays/rpi-dpidac.ko
-
+    
 reboot
 
