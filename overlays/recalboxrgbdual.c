@@ -408,7 +408,7 @@ static int dpidac_attach(struct drm_bridge *bridge, enum drm_bridge_attach_flags
     bus_format = MEDIA_BUS_FMT_RGB666_1X24_CPADHI;
   }
   if(mode == 3) {
-    bus_format = 0x101e;
+    bus_format = 0x1020;
     // MEDIA_BUS_FMT_RGB565_1X24_CPADHI in kernel 5.15
   }
 
