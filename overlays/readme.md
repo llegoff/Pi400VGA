@@ -20,12 +20,13 @@ rpi-dpidac.ko -> driver folder
 
 copy recalboxrgbdual.ko and recalboxrgbdual-thirdparty.dtbo in the overlays folder of the fat32 partition
 
+copy Pi400VGA-config.txt in the crt/dacs folder of the fat32 partition
+
 ssh recalbox
 
     cd /
     mount -o remount,rw /
     cd /lib/modules/5.10.83-v7l/extra/
-    rm rpi-dpidac.ko
     cp /boot/overlays/recalboxrgbdual.ko recalboxrgbdual.ko
     chmod 644 rpi-dpidac.ko
     
