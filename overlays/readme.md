@@ -18,7 +18,7 @@ rpi-dpidac.ko -> driver folder
 
 ### patch recalbox 8
 
-copy recalboxrgbdual.ko and recalboxrgbdual-thirdparty.dtbo in fat32 partition in overlays folder
+copy recalboxrgbdual.ko and recalboxrgbdual-thirdparty.dtbo in the overlays folder of the fat32 partition
 
 ssh recalbox
 
