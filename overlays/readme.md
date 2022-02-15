@@ -21,7 +21,7 @@ ssh recalbox
     mount -o remount,rw /
     cd /lib/modules/5.10.83-v7l/extra/
     cp /boot/overlays/recalboxrgbdual.ko recalboxrgbdual.ko
-    chmod 644 rpi-dpidac.ko
+    chmod 644 recalboxrgbdual.ko
     
 reboot
 
