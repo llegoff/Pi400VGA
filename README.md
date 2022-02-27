@@ -7,7 +7,7 @@ for Scart interface see https://github.com/llegoff/Pi400RGB
 
 for pi zero see https://github.com/llegoff/VGA_Zero
 
-buy on [ebay](https://www.ebay.fr/itm/154831724369) :package:  
+buy on [ebay](https://www.ebay.fr/itm/154872763613) :package:  
 
 ![](img/Pi400VGA.jpg)
 
