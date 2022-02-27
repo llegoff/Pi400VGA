@@ -1,7 +1,9 @@
 [:fr:](LISEZMOI.md) [:uk:](README.md)
 
 # Pi400VGA
-interface VGA pour Raspberry Pi 400 
+interface VGA pour Raspberry Pi 400
+
+pour la l'interfce péritel, voir https://github.com/llegoff/Pi400RGB
 
 pour le pi zero, voir https://github.com/llegoff/VGA_Zero
 
