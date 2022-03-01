@@ -101,6 +101,8 @@
 			<&dpi_node_generic>, "pinctrl-0:0=",<&dpi_16bit_cpadhi_gpio2>;
 		rgb666-padhi = <&connector_generic>, "bus-format:0=0x1015",
 			<&dpi_node_generic>, "pinctrl-0:0=",<&dpi_18bit_cpadhi_gpio2>;
+		rgb888 = <&connector_generic>, "bus-format:0=0x100a",
+			<&dpi_node_generic>, "pinctrl-0:0=",<&dpi_gpio2>;
 		ddc = <0>,"=2", <0>,"=3", <0>,"=4";
 	};
 };
