@@ -17,7 +17,7 @@
 
 	fragment@0 {
 		target-path = "/";
-		__overlay__ {
+		connector_generic: __overlay__ {
 			vga_connector: vga_connector {
 				compatible = "vga-connector";
 				label = "vga";
@@ -95,9 +95,12 @@
 	};
 
 	__overrides__ {
-    rgb565 = <&dpi_node_generic>, "pinctrl-0:0=",<&dpi_16bit_gpio2>;
-    rgb565-padhi = <&dpi_node_generic>, "pinctrl-0:0=",<&dpi_16bit_cpadhi_gpio2>;
-    rgb666-padhi = <&dpi_node_generic>, "pinctrl-0:0=",<&dpi_18bit_cpadhi_gpio2>;
+		rgb565 = <&connector_generic>, "bus-format:0=0x1017",
+			<&dpi_node_generic>, "pinctrl-0:0=",<&dpi_16bit_gpio2>;
+		rgb565-padhi = <&connector_generic>, "bus-format:0=0x1020",
+			<&dpi_node_generic>, "pinctrl-0:0=",<&dpi_16bit_cpadhi_gpio2>;
+		rgb666-padhi = <&connector_generic>, "bus-format:0=0x1015",
+			<&dpi_node_generic>, "pinctrl-0:0=",<&dpi_18bit_cpadhi_gpio2>;
 		ddc = <0>,"=2", <0>,"=3", <0>,"=4";
 	};
 };
