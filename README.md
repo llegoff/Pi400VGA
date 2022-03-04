@@ -55,6 +55,8 @@ only the necessary bits of the dpi are redirected to the 40-pin GPIO port, with 
 
 :point_up: this config work only with Raspberry pi OS, not with Recalbox OS or RGB-Pi OS (use rpi-dpidac, who only work with dpi mode 5 & 6)
 
+for RecalboxOS or RGB-Pi OG , see https://github.com/llegoff/Pi400RGB
+
     # replace dtoverlay=vc4-kms-v3d with
     dtoverlay=vc4-fkms-v3d
     # disable i2c, pin use by h-sync & v-sync
