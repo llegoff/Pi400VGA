@@ -3,7 +3,7 @@
 # Pi400VGA
 VGA interface for Raspberry Pi 400
 
-for Scart interface see https://github.com/llegoff/Pi400RGB
+for retrogaming see Scart/VGA interface : https://github.com/llegoff/Pi400RGB
 
 for pi zero see https://github.com/llegoff/VGA_Zero
 
