@@ -54,6 +54,10 @@ seuls les bits nécessaires du dpi sont redirigées sur le port GPIO 40 broches,
 
 ### Ecran Cathodique 15khz
 
+:point_up: cette configuration ne fonctionne qu'avec Raspberry pi OS, et ne fonctionne pas avec Recalbox OS ou RGB-Pi OS (qui utilise le pilote rpi-dpidac, qui ne fonctionne qu'avec le dpi_mode 5 & 6)
+
+pour une interface compatible avec RecalboxOS et RGB-Pi OG , voir https://github.com/llegoff/Pi400RGB
+
     # disable i2c, pin use by h-sync & v-sync
     dtparam=i2c_arm=off
     gpio=2-8,12-17,20-24=a2
