@@ -53,6 +53,10 @@ only the necessary bits of the dpi are redirected to the 40-pin GPIO port, with 
 
 ### 15khz cathode ray screen
 
+:point_up: this config work only with Raspberry pi OS, not with Recalbox OS or RGB-Pi OS (use rpi-dpidac, who only work with dpi mode 5 & 6)
+
+    # replace dtoverlay=vc4-kms-v3d with
+    dtoverlay=vc4-fkms-v3d
     # disable i2c, pin use by h-sync & v-sync
     dtparam=i2c_arm=off
     gpio=2-8,12-17,20-24=a2
