@@ -3,7 +3,7 @@
 # Pi400VGA
 interface VGA pour Raspberry Pi 400
 
-pour la l'interfce péritel, voir https://github.com/llegoff/Pi400RGB
+:warning: pour du retrogaming sur écran cathodique, voir https://github.com/llegoff/Pi400RGB
 
 pour le pi zero, voir https://github.com/llegoff/VGA_Zero
 
